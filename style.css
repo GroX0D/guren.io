@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px;
+}
+
+body {
+    background-color: #fcf6f5;
+    font-family: serif;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+.header {
+    position: relative;
+    bottom: 30px;
+    background-color: #63d1f6;
+    border-radius: 20px;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: serif;
+}
+
+.header h1 { 
+    font-family: serif;
+    font-size: 70px;
+}
+
+.nav {
+    position: relative;
+    bottom: 50px;
+    border-radius: 20px;
+    background-color: #2b2821;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+    gap: 50px;
+}
+
+.nav-link li {
+    font-size: large;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: black;
+    background-color: #e88b00;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.nav-link a:hover {
+    border-radius: 20px;
+    color: white;
+    background-color: #63d1f6;
+    transition-duration: 1s;
+
+}
+
+#container {
+    background-color: #2b2821;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 50px;
+}
+
+.aside {
+    background-color: #63d1f6;
+    border-radius: 20px;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.aside h1 {
+    background-color: #e88b00;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+}
+
+#container .aside p {
+    font-family: serif;
+
+}
+
+.main {
+    background-color: #a6e7f1;
+    border-radius: 20px;
+    padding: 1em;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+}
+
+.main .maint {
+    padding: 0.5em;
+    margin: 10px;
+    text-align: center;
+    background-color: #e88b00;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.article {
+    background-color: #63d1f6;
+    border-radius: 20px;
+    padding: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+    height: auto;
+}
+
+.article .gamabar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-image: url(/img/Gurren\ lagann.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.article .gamabar img {
+    border-radius: 20px;
+    height: auto;
+    max-width: 100%;
+    margin: 0.5em;
+}
+
+.article .gamabar img:hover {
+    cursor: pointer;
+}
+
+.article .text {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    background-color: #a6e7f1;
+    border-radius: 20px;
+}
+
+.article .text .textt {
+    font-family: monospace;
+}
+
+.section {
+    background-color: #e88b00;
+    border-radius: 20px;
+    padding: 1em;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+}
+
+.section h1 {
+    text-align: center;
+    justify-content: center;
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+}
+
+.footer {
+    background-color: rgb(61, 61, 61);
+    padding: 1em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 100px;
+}
+
+.footer h1, .footer p {
+    padding: 0.5em;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 0.8em;
+    color: #ccc;
+}
+
+@media screen and (min-width: 600px) {
+    #container {
+        flex-direction: row;
+    }
+    
+    .aside {
+        width: 25%;
+    }
+    
+    .main {
+        width: 75%;
+    }
+}
+
