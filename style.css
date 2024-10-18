@@ -131,7 +131,7 @@ body {
     justify-content: center;
     width: 100%;
     height: auto;
-    background-image: url(/gambar/back.jpg);
+    background-image: url(gambar/back.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
